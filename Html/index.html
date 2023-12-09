@@ -22,14 +22,21 @@
 
     <label for="estilo">Selecio o tamnho do Desenho dentro da Folha:</label>
     <select id="estilo" name="estilo">
-        <option value="5">Traços</option>
-        <option value="10">Raxurado</option>
-        <option value="20">Realismo</option>
-        <option value="15">Sombreado</option>
-        <option value="30">Colorido</option>
-        <option value="40">Colorido Realismo</option>
+        <option value="5">Traços R$5</option>
+        <option value="10">Raxurado R$10</option>
+        <option value="15">Sombreado R$15</option>
+        <option value="20">Realismo R$20</option>
+        <option value="30">Colorido R$30</option>
+        <option value="40">Colorido Realismo R$40</option>
     </select>
 
+    <p>Valor total: <span id="valorTotal">0</span></p>
+
+    <label for="confirmação">Confirmar Pedido:</label>
+    <input type="checkbox" id="confirmação" name="confirmado">
+
+    <button onclick="redirecionarWhatsApp()">WhasApp</button>
+    
 </body>
 
 </html>
